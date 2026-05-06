@@ -56,6 +56,10 @@ body {
   padding-top: 64px;
 }
 
+.sp-only {
+  display: none;
+}
+
 /* ========================================
    固定ヘッダー
 ======================================== */
@@ -721,8 +725,17 @@ body {
   display: inline-block;
   font-weight: 500;
   color: var(--navy) !important;
-  background: linear-gradient(transparent 58%, rgba(232,212,144,0.42) 58%);
+  background: none;
   padding: 0 4px;
+}
+
+.empathy-closing span {
+  display: inline;
+  text-decoration-line: underline;
+  text-decoration-color: rgba(200,168,76,0.62);
+  text-decoration-thickness: 4px;
+  text-underline-offset: 7px;
+  text-decoration-skip-ink: none;
 }
 
 .empathy-closing em {
@@ -1924,7 +1937,15 @@ body {
 
   .empathy-closing {
     display: block;
-    background: linear-gradient(transparent 64%, rgba(232,212,144,0.44) 64%);
+    background: none;
+  }
+
+  .pc-only {
+    display: none;
+  }
+
+  .sp-only {
+    display: inline;
   }
 
   .cert-row {

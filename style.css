@@ -1043,6 +1043,10 @@ body {
   margin-bottom: 20px;
 }
 
+.period-break {
+  display: none;
+}
+
 .price-divider {
   height: 1px;
   background: var(--aqua-pale);
@@ -1164,6 +1168,13 @@ body {
   font-size: 15px;
   line-height: 1.9;
   color: var(--text-mid);
+}
+
+.content-image-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  background: var(--white);
 }
 
 /* 画像プレースホルダー（カード内） */
@@ -1789,10 +1800,17 @@ body {
     align-items: stretch;
   }
   .content-card-body { flex: 1; }
+  .content-image-wrap,
   .img-content {
     width: 240px;
+  }
+  .img-content {
     height: auto;
     flex-shrink: 0;
+  }
+
+  .content-image-wrap .img-content {
+    width: 100%;
   }
 
   /* リスト：2列グリッド */
@@ -1992,6 +2010,10 @@ body {
     white-space: nowrap;
     font-size: 17px;
     letter-spacing: 0;
+  }
+
+  .period-break {
+    display: block;
   }
 
   .form-info-price {
